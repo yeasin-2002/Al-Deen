@@ -4,7 +4,7 @@
 
 ### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
 
-## Conurbations Guidelines
+## Conurbations Guidelines-
 
 #### Commit convention
 ```

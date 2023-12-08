@@ -12,6 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --fix",
     "format": "prettier . --write",
     "prepare": "husky install",
     "pre-commit": "npx husky add .husky/pre-commit \"lint staged\"",
@@ -31,10 +32,13 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@tanstack/react-query-devtools": "^5.13.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
     "autoprefixer": "^10.0.1",
     "eslint": "^8.55.0",
     "eslint-config-next": "14.0.4",
@@ -53,7 +57,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --fix",
       "git add --all"
     ]
   }
