@@ -1,5 +1,23 @@
+# Al-Deen 
+###  A islamic Web and desktop application (Coming Soon)  for muslims to help them in their daily life. All in one app where you can find all the islamic stuffs, such as: Quran, Hadith, Prayer Times,  Islamic Calendar,    99 Names of Allah, Ramadan Timings,   Daily Islamic Quotes and many more. 
 
-##### Commit lint convention
+
+### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
+
+## Conurbations Guidelines
+
+#### Commit convention
+```
+git commit -m "type(scope): subject"
+```
+
+
+### For example
+```
+git commit -m "feat: add new feature"
+```
+
+##### Commit lint conventions
 
 | Commit Type | Description                                                                                                 |
 | ----------- | ----------------------------------------------------------------------------------------------------------- |
@@ -15,10 +33,3 @@
 | style       | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      |
 | test        | Adding missing tests or correcting existing tests                                                           |
 
-
-
-#### Setup 
- - commit lint
- - prettier with eslint 
- - husky
-- lint-staged
