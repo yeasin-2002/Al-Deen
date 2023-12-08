@@ -2,6 +2,11 @@
   "name": "al-deen",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "md kawsar islam yeasin",
+    "url": "https://github.com/yeasin-2002",
+    "email": "mdkawsarislam2002@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -26,15 +31,23 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tanstack/react-query-devtools": "^5.13.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
+    "eslint": "^8.55.0",
     "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-perfectionist": "^2.5.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-unicorn": "^49.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "postcss": "^8",
+    "prettier": "^3.1.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   },
