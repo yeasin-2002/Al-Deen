@@ -8,4 +8,7 @@
     .greeny {
         @apply bg-gradient-to-l from-teal-600  to-green-500;
     }
+    .greeny-rl {
+        @apply bg-gradient-to-r from-teal-600  to-green-500;
+    }
 }

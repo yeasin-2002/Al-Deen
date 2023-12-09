@@ -1,4 +1,4 @@
-import { GlobalWrapper, Nav } from "@/components";
+import { Footer, GlobalWrapper, Nav } from "@/components";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -17,6 +17,7 @@ export default function RootLayout({
       <body>
         <Nav />
         <GlobalWrapper>{children}</GlobalWrapper>
+        <Footer />
       </body>
     </html>
   );

@@ -5,6 +5,6 @@ import Image from "next/image";
 
 export const Logo = ({ ...rest }) => {
   return (
-    <Image src={logImg} width={40} height={40} alt="Al-Deen Logo" {...rest} />
+    <Image src={logImg} width={50} height={50} alt="Al-Deen Logo" {...rest} />
   );
 };

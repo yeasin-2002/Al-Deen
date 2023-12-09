@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { DetailedHTMLProps, FC, HTMLAttributes } from "react";
 
 import moonStar from "@/assets/Ilastrations/moon-star.png";
+import { menuItem } from "@/data/navigation";
 import { Button } from "@/ui/button";
 import { Logo } from "./Logo";
 
@@ -16,23 +17,9 @@ interface NavProps
 export const Nav: FC<NavProps> = ({ ...rest }) => {
   const path = usePathname();
 
-  const menuItem = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
   return (
     <div {...rest} className="flex justify-between p-3">
-      <Logo  />
+      <Logo />
       <div className="space-x-3 text-gray-800">
         {menuItem.map((item) => {
           return (
@@ -57,7 +44,7 @@ export const Nav: FC<NavProps> = ({ ...rest }) => {
         })}
       </div>
       <div>
-        <Button variant={"teal"}>
+        <Button className="greeny">
           <Heart className="white" fill="white" />
         </Button>
       </div>
