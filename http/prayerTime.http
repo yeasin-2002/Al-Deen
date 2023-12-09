@@ -1,0 +1,6 @@
+
+# Today Prayer Time
+GET https://api.aladhan.com/v1/timingsByCity?city=Dhaka&country=Bangladesh&method=2
+
+# Prayer Time by Date
+GET https://api.aladhan.com/v1/calendarByCity?city=Dhaka&country=Bangladesh&method=2&month=9&year=2023

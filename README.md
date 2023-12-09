@@ -1,12 +1,14 @@
 # Al-Deen 
-###  A islamic Web and desktop application (Coming Soon)  for muslims to help them in their daily life. All in one app where you can find all the islamic stuffs, such as: Quran, Hadith, Prayer Times,  Islamic Calendar,    99 Names of Allah, Ramadan Timings,   Daily Islamic Quotes and many more. 
 
 
-### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
+####  A islamic Web and desktop application (Coming Soon)  for muslims to help them in their daily life. All in one app where you can find all the islamic stuffs, such as: Quran, Hadith, Prayer Times,  Islamic Calendar,    99 Names of Allah, Ramadan Timings,   Daily Islamic Quotes and many more. 
 
-## Conurbations Guidelines-
 
-#### Commit convention
+#### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
+
+### Conurbations Guidelines-
+
+##### Commit convention
 ```
 git commit -m "type(scope): subject"
 ```
