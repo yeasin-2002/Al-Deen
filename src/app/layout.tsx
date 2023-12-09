@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="greeny">
+      <body>
         <Nav />
         <GlobalWrapper>{children}</GlobalWrapper>
       </body>
