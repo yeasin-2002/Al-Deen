@@ -20,6 +20,8 @@ module.exports = {
   ],
   rules: {
     "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/consistent-type-definitions": 0,
+    "@typescript-eslint/no-unsafe-assignment": 0,
   },
   root: true,
   parserOptions: {

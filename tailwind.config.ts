@@ -8,6 +8,9 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -16,6 +19,14 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        "gold-original": "#ffd700",
+        "gold-little": "#FFDE2E",
+        "gold-smooth": "#FFED8A",
+        "gold-light": "#fef9ee",
+        "gold-deep": "#f2c557",
+        "triadic-green": "#35a151",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

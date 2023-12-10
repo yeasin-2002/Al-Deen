@@ -50,7 +50,7 @@ export const Footer: FC<FooterProps> = ({ ...rest }) => {
 
           <div className=" md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              Contact
+              CONTACT
             </h2>
             <nav className="list-none mb-10 flex flex-col">
               {contactItem.map((item) => {
@@ -74,16 +74,16 @@ export const Footer: FC<FooterProps> = ({ ...rest }) => {
               <div className="text-left rtl:text-right">
                 <div className="mb-1 text-xs">Get in on</div>
                 <div className="-mt-1 font-sans text-sm font-semibold">
-                  Download for Windows
+                  Windows
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="greeny-rl">
+      <div className="greeny-light">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row ">
-          <p className="text-gray-100 text-sm text-center font-bold sm:text-left">
+          <p className="text-gray-800 text-sm text-center font-bold sm:text-left">
             © Al-Deen {year}
           </p>
           <div className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start gap-x-2 ">
