@@ -1,1 +1,1 @@
-export * from "./geoLocation.interface";
+export * from "./prayerTime.interface";
