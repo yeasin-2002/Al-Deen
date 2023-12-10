@@ -10,7 +10,7 @@ export const Hero: FC<HeroProps> = ({ ...rest }) => {
   return (
     <div
       {...rest}
-      className="grid grid-cols-1 md:grid-cols-2 place-items-center container "
+      className="grid grid-cols-1 md:grid-cols-2 place-items-center   bg-gold-light"
     >
       <Image src={prayer} alt="prayer" className="w-3/5 justify-self-start" />
 

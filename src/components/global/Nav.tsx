@@ -18,7 +18,7 @@ export const Nav: FC<NavProps> = ({ ...rest }) => {
   const path = usePathname();
 
   return (
-    <div {...rest} className="flex justify-between p-3">
+    <div {...rest} className="flex justify-between p-3 bg-gold-light">
       <Logo />
       <div className="space-x-3 text-gray-800">
         {menuItem.map((item) => {
