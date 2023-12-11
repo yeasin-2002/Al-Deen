@@ -7,7 +7,12 @@
 
 #### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
 
-### Conurbations Guidelines-
+### Conurbations Guidelines
+
+### Reference
+- [Hadith API](https://www.hadithapi.com/docs/hadiths)
+- [Aladhan API ](https://aladhan.com/)
+- [Qran API](https://alquran.cloud/api)
 
 ##### Commit convention
 ```

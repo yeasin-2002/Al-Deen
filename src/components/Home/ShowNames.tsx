@@ -16,14 +16,16 @@ export const ShowNames: FC<ShowNamesProps> = ({ ...rest }) => {
     >
       <Link
         href={"/allah99Names"}
-        className={"flex items-center gap-x-2 greeny-rl  px-4 py-21"}
+        className={
+          "flex items-center gap-x-2 greeny-rl  px-4 py-21  rounded-sm "
+        }
       >
         <Image src={allahSymbol} alt="Allah" width={70} height={70} />
         <p className="text-gray-700 font-medium ">99 Names Of Allah</p>
       </Link>
       <Link
         href={"/islamic-name"}
-        className={"flex items-center gap-x-2 greeny px-4 py-21"}
+        className={"flex items-center gap-x-2 greeny px-4 py-21 rounded-sm "}
       >
         <Image src={babyFace} alt="Allah" width={70} height={70} />
         <p className="text-gray-700 font-medium ">Islamic Baby Names</p>

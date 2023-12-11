@@ -1,5 +1,9 @@
-import { Hero, ShowPrayerTime } from "@/components/Home";
-import { ShowNames } from "@/components/Home/ShowNames";
+import {
+  FivePillars,
+  Hero,
+  ShowNames,
+  ShowPrayerTime,
+} from "@/components/Home";
 
 export default function Home() {
   return (
@@ -7,6 +11,7 @@ export default function Home() {
       <Hero />
       <ShowPrayerTime />
       <ShowNames />
+      <FivePillars />
     </main>
   );
 }
