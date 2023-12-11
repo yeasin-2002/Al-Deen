@@ -8,7 +8,6 @@ import { DetailedHTMLProps, FC, HTMLAttributes } from "react";
 
 import moonStar from "@/assets/Ilastrations/moon-star.png";
 import { menuItem } from "@/data/navigation";
-import { Button } from "@/ui/button";
 import { Logo } from "./Logo";
 
 interface NavProps
@@ -18,8 +17,10 @@ export const Nav: FC<NavProps> = ({ ...rest }) => {
   const path = usePathname();
 
   return (
-    <div {...rest} className="flex justify-between p-3 bg-gold-light">
-      <Logo />
+    <div {...rest} className="flex justify-between p-3 bg-gold-light ">
+      <Link href={"/"}>
+        <Logo />
+      </Link>
       <div className="space-x-3 text-gray-800">
         {menuItem.map((item) => {
           return (
@@ -43,11 +44,13 @@ export const Nav: FC<NavProps> = ({ ...rest }) => {
           );
         })}
       </div>
-      <div>
-        <Button className="greeny">
-          <Heart className="white" fill="white" />
-        </Button>
-      </div>
+
+      <Link
+        href={"/favorite"}
+        className="greeny  px-4  grid place-items-center rounded-md"
+      >
+        <Heart className=" text-white" fill="white" />
+      </Link>
     </div>
   );
 };

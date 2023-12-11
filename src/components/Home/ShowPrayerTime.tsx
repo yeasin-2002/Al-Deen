@@ -3,9 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import { DetailedHTMLProps, FC, Fragment, HTMLAttributes } from "react";
 
 import { prayerTimeResponse } from "@/interface";
-import { useLatitudeAndLongitude } from "@/utils";
+import { convert12HourDateFormat, useLatitudeAndLongitude } from "@/utils";
 
 import fazarIcon from "@/assets/Ilastrations/moon-star.png";
+import Image from "next/image";
 
 interface ShowPrayerTimeProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
@@ -32,11 +33,6 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
     {
       name: "Fajr",
       time: data?.data?.timings?.Fajr,
-      icon: fazarIcon,
-    },
-    {
-      name: "Sunrise",
-      time: data?.data?.timings?.Sunrise,
       icon: fazarIcon,
     },
     {
@@ -71,7 +67,7 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
             <p>
               {data?.data?.date?.gregorian?.weekday?.en},
               {data?.data?.date?.gregorian?.day}{" "}
-              {data?.data?.date?.gregorian?.month?.en}
+              {data?.data?.date?.gregorian?.month?.en}{" "}
               {data?.data?.date?.gregorian?.year}
             </p>
             <p>
@@ -82,9 +78,19 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
             </p>
           </div>
 
-          <div>
+          <div className="flex gap-x-3 my-6">
             {prayerTimeItem.map((item) => {
-              return <div key={item.name + item.time}>{item.name}</div>;
+              const time = convert12HourDateFormat(item.time);
+              return (
+                <div
+                  key={item.name + item.time}
+                  className=" shadow-xl mx-auto text-center  space-y-2 bg-green-100 hover:bg-green-200 transition-all duration-300 px-12 py-8 rounded-t-full "
+                >
+                  <Image width={50} src={item.icon} alt={item.name} />
+                  <p>{item.name}</p>
+                  <p>{time}</p>
+                </div>
+              );
             })}
           </div>
         </div>

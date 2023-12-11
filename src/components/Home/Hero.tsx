@@ -1,5 +1,6 @@
 import prayer from "@/assets/Ilastrations/muslim-man-is-praying.svg";
 
+
 import Image from "next/image";
 import { DetailedHTMLProps, FC, HTMLAttributes } from "react";
 

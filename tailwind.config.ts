@@ -27,6 +27,7 @@ module.exports = {
         "gold-deep": "#f2c557",
         "triadic-green": "#35a151",
       },
+
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
