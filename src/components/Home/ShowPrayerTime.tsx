@@ -6,6 +6,11 @@ import { prayerTimeResponse } from "@/interface";
 import { convert12HourDateFormat, useLatitudeAndLongitude } from "@/utils";
 
 import fazarIcon from "@/assets/Ilastrations/moon-star.png";
+import sunCloud from "@/assets/Ilastrations/sun-cloud.svg";
+import sun from "@/assets/Ilastrations/sunIcon.svg";
+import sunrise from "@/assets/Ilastrations/sunrise.svg";
+import sunset from "@/assets/Ilastrations/sunset.svg";
+
 import Image from "next/image";
 
 interface ShowPrayerTimeProps
@@ -28,27 +33,27 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
     },
     staleTime: 1000 * 60 * 10, // 10 minutes
   });
-  console.log("🚀 ~ file: ShowPrayerTime.tsx:25 ~ queryFn: ~ data:", data);
+
   const prayerTimeItem = [
     {
       name: "Fajr",
       time: data?.data?.timings?.Fajr,
-      icon: fazarIcon,
+      icon: sunrise,
     },
     {
       name: "Dhuhr",
       time: data?.data?.timings?.Dhuhr,
-      icon: fazarIcon,
+      icon: sun,
     },
     {
       name: "Asr",
       time: data?.data?.timings?.Asr,
-      icon: fazarIcon,
+      icon: sunCloud,
     },
     {
       name: "Maghrib",
       time: data?.data?.timings?.Maghrib,
-      icon: fazarIcon,
+      icon: sunset,
     },
     {
       name: "Isha",
@@ -86,7 +91,12 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
                   key={item.name + item.time}
                   className=" shadow-xl mx-auto text-center  space-y-2 bg-green-100 hover:bg-green-200 transition-all duration-300 px-12 py-8 rounded-t-full "
                 >
-                  <Image width={50} src={item.icon} alt={item.name} />
+                  <Image
+                    width={50}
+                    height={50}
+                    src={item.icon}
+                    alt={item.name}
+                  />
                   <p>{item.name}</p>
                   <p>{time}</p>
                 </div>
