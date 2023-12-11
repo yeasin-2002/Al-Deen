@@ -3,8 +3,8 @@ import { DetailedHTMLProps, FC, HTMLAttributes } from "react";
 interface pageProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
-const Contact: FC<pageProps> = ({ ...rest }) => {
-  return <div {...rest}>Contact</div>;
+const About: FC<pageProps> = ({ ...rest }) => {
+  return <div {...rest}>quran</div>;
 };
 
-export default Contact;
+export default About;

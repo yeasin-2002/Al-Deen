@@ -8,6 +8,7 @@ import kabaIcon from "@/assets/Ilastrations/kaaba.png";
 import namazIcon from "@/assets/Ilastrations/namaz.svg";
 
 import prayerBG from "@/assets/Ilastrations/muslim-prayer.png";
+import { PillarsDesc } from "./PillersDesc";
 interface FivePillarsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
@@ -65,7 +66,7 @@ export const FivePillars: FC<FivePillarsProps> = ({ ...rest }) => {
                     {item.name} / {item.arabicName}{" "}
                   </p>
                 </div>
-                <p>{item.desc}</p>
+                <PillarsDesc desc={item.desc} />
               </div>
             );
           })}
@@ -86,7 +87,7 @@ export const FivePillars: FC<FivePillarsProps> = ({ ...rest }) => {
                     {item.name} / {item.arabicName}{" "}
                   </p>
                 </div>
-                <p>{item.desc}</p>
+                <PillarsDesc desc={item.desc} />
               </div>
             );
           })}

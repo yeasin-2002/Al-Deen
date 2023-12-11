@@ -4,11 +4,11 @@ export const menuItem = [
     link: "/",
   },
   {
-    name: "About",
-    link: "/about",
+    name: "Quran",
+    link: "/quran",
   },
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Hadith",
+    link: "/hadith",
   },
 ];
