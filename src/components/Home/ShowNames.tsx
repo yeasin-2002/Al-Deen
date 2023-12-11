@@ -10,15 +10,10 @@ interface ShowNamesProps
 
 export const ShowNames: FC<ShowNamesProps> = ({ ...rest }) => {
   return (
-    <div
-      className="py-4 flex items-center gap-x-3 justify-center mt-6"
-      {...rest}
-    >
+    <div className=" flex items-center gap-x-3   " {...rest}>
       <Link
         href={"/allah99Names"}
-        className={
-          "flex items-center gap-x-2 greeny-rl  px-4 py-21  rounded-sm "
-        }
+        className={"flex items-center gap-x-2 greeny-rl  px-4   rounded-sm "}
       >
         <Image src={allahSymbol} alt="Allah" width={70} height={70} />
         <p className="text-gray-700 font-medium ">99 Names Of Allah</p>

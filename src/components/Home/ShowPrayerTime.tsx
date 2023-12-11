@@ -83,7 +83,7 @@ export const ShowPrayerTime: FC<ShowPrayerTimeProps> = ({ ...rest }) => {
             </p>
           </div>
 
-          <div className="flex gap-x-3 my-6">
+          <div className="grid gap-x-3 my-6  grid-cols-2 gap-y-4 justify-center sm:grid-cols-3 lg:grid-cols-5  ">
             {prayerTimeItem.map((item) => {
               const time = convert12HourDateFormat(item.time);
               return (

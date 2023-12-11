@@ -4,7 +4,11 @@ interface pageProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 const Favorite: FC<pageProps> = ({ ...rest }) => {
-  return <div {...rest}></div>;
+  return (
+    <div {...rest}>
+      <h1>Favorite</h1>
+    </div>
+  );
 };
 
 export default Favorite;
