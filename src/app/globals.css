@@ -4,6 +4,9 @@
 
 
 @layer components {
+    .heading-main {
+        @apply text-center text-3xl font-semibold mb-5 text-night-blue 
+    }
     .greeny {
         @apply bg-gradient-to-l from-teal-600  to-green-500;
     }

@@ -1,7 +1,7 @@
 import {
   FivePillars,
   Hero,
-
+  RandomHadith,
   ShowPrayerTime,
 } from "@/components/Home";
 
@@ -11,6 +11,7 @@ export default function Home() {
       <Hero />
       <ShowPrayerTime />
       <FivePillars />
+      <RandomHadith />
     </main>
   );
 }

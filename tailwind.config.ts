@@ -26,6 +26,7 @@ module.exports = {
         "gold-light": "#fef9ee",
         "gold-deep": "#f2c557",
         "triadic-green": "#35a151",
+        "night-blue": "#0e102d",
       },
 
       keyframes: {

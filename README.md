@@ -10,7 +10,7 @@
 ### Conurbations Guidelines
 
 ### Reference
-- [Hadith API](https://www.hadithapi.com/docs/hadiths)
+- [Hadith API](https://www.hadithapi.com)
 - [Aladhan API ](https://aladhan.com/)
 - [Qran API](https://alquran.cloud/api)
 

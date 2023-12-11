@@ -49,7 +49,7 @@ const pillarsItem = [
 export const FivePillars: FC<FivePillarsProps> = ({ ...rest }) => {
   return (
     <div {...rest} className="px-5 py-10">
-      <h2 className="font-bold text-xl my-6">5 Pillar Of Islam</h2>
+      <h2 className="heading-main ">5 Pillar Of Islam</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <div className="pillarGame">
           {pillarsItem.slice(0, 3).map((item) => {
@@ -62,9 +62,10 @@ export const FivePillars: FC<FivePillarsProps> = ({ ...rest }) => {
                     width={30}
                     height={30}
                   />
-                  <p className="text-xl font-bold text-gray-600">
-                    {item.name} / {item.arabicName}{" "}
-                  </p>
+                  <div>
+                    <p className="font-medium text-lg">{item.name}</p>
+                    <p>{item.arabicName}</p>
+                  </div>
                 </div>
                 <PillarsDesc desc={item.desc} />
               </div>
@@ -83,10 +84,12 @@ export const FivePillars: FC<FivePillarsProps> = ({ ...rest }) => {
                     width={30}
                     height={30}
                   />
-                  <p className="text-xl font-bold text-gray-600">
-                    {item.name} / {item.arabicName}{" "}
-                  </p>
+                  <div>
+                    <p className="font-medium text-lg">{item.name}</p>
+                    <p>{item.arabicName}</p>
+                  </div>
                 </div>
+
                 <PillarsDesc desc={item.desc} />
               </div>
             );
