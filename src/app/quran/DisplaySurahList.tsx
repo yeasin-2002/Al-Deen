@@ -8,6 +8,8 @@ import { listOfAllSurah } from "./_data/ListOfAllSurah";
 
 import kabaSymbol from "@/assets/Ilastrations/kaaba.png";
 import madinaSymbol from "@/assets/Ilastrations/lantern.png";
+import { VazirmatnFont } from "@/font";
+import Link from "next/link";
 
 interface DisplaySurahListProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
@@ -21,7 +23,7 @@ export const DisplaySurahList: FC<DisplaySurahListProps> = ({ ...rest }) => {
   });
 
   return (
-    <div {...rest} className="space-y-10">
+    <div {...rest} className="space-y-10 w-full flex-1">
       <div className="h-20  w-4/5 rounded-full mx-auto bg-white  border shadow-lg  text-gray-900 flex gap-x-10 px-5 items-center">
         <SearchIcon />
         <input
@@ -36,9 +38,10 @@ export const DisplaySurahList: FC<DisplaySurahListProps> = ({ ...rest }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {filterSurah?.map((item) => {
           return (
-            <div
+            <Link
+              href={`/quran/${item.number}`}
               key={item.number + item.name}
-              className="bg-white shadow-lg rounded-lg p-5 m-5 text-gray-900 flex items-center justify-between"
+              className="hover:bg-gray-100 bg-gray-50  shadow-lg rounded-lg p-5 m-5 text-gray-900 flex items-center justify-between relative"
             >
               <div className="rounded-md bg-gray-600  p-2 shadow-2xl   rotate-45 [&>*]:-rotate-45  ">
                 {item.revelationType === "Meccan" ? (
@@ -57,9 +60,12 @@ export const DisplaySurahList: FC<DisplaySurahListProps> = ({ ...rest }) => {
                 <p>{item.englishNameTranslation}</p>
               </div>
               <div>
-                <p>{item.name}</p>
+                <p className={VazirmatnFont.className}>{item.name}</p>
               </div>
-            </div>
+              <span className="absolute top-0 bg-gray-400 text-xs p-1 rounded-full   right-1 h-5 w-5 grid place-items-center ">
+                {item.number}
+              </span>
+            </Link>
           );
         })}
       </div>

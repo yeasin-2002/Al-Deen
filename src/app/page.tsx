@@ -1,17 +1,23 @@
+import { Footer, Nav } from "@/components";
 import {
   FivePillars,
   Hero,
   RandomHadith,
   ShowPrayerTime,
 } from "@/components/Home";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <main className="bg-gold-light space-y-10">
-      <Hero />
-      <ShowPrayerTime />
-      <RandomHadith />
-      <FivePillars />
-    </main>
+    <Fragment>
+      <Nav />
+      <main className="bg-gold-light">
+        <Hero />
+        <ShowPrayerTime />
+        <FivePillars />
+        <RandomHadith />
+      </main>
+      <Footer />
+    </Fragment>
   );
 }

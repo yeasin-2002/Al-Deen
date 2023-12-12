@@ -1,5 +1,6 @@
-import { Footer, GlobalWrapper, Nav } from "@/components";
+import { GlobalWrapper } from "@/components";
 import type { Metadata } from "next";
+import React from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Nav />
         <GlobalWrapper>{children}</GlobalWrapper>
-        <Footer />
       </body>
     </html>
   );

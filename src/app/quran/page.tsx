@@ -9,7 +9,7 @@ interface pageProps
 const About: FC<pageProps> = ({ ...rest }) => {
   return (
     <div {...rest} className="bg-gold-light">
-      <GodSymbol className="w-28 h-28 mx-auto" />
+      <GodSymbol className="w-48 h-48 mx-auto" />
       <DisplaySurahList />
     </div>
   );
