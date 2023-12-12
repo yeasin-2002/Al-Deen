@@ -7,11 +7,11 @@ import {
 
 export default function Home() {
   return (
-    <main className="bg-gold-light">
+    <main className="bg-gold-light space-y-10">
       <Hero />
       <ShowPrayerTime />
-      <FivePillars />
       <RandomHadith />
+      <FivePillars />
     </main>
   );
 }

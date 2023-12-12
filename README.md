@@ -1,18 +1,25 @@
 ![Logo](/public/logo-tranparent.png)
+
 # Al-Deen 
 
 
-####  A islamic Web and desktop application (Coming Soon)  for muslims to help them in their daily life. All in one app where you can find all the islamic stuffs, such as: Quran, Hadith, Prayer Times,  Islamic Calendar,    99 Names of Allah, Ramadan Timings,   Daily Islamic Quotes and many more. 
+#####  A islamic Web and desktop application (Coming Soon)  for muslims to help them in their daily life. All in one app where you can find all the islamic stuffs, such as: Quran, Hadith, Prayer Times,  Islamic Calendar,    99 Names of Allah, Ramadan Timings,   Daily Islamic Quotes and many more. 
+
+##### However,I are gonna make a Desktop application version of Al-Deen, Check out the [Al-Deen Desktop](https://github.com/yeasin-2002/Al-Deen-desktop) repository. 
 
 
-#### However,  Is is fully open source project, you can contribute to this project by following the guidelines below.
-
-### Conurbations Guidelines
+### UI Inspiration
+- [Quran.com](https://quran.com/)
+- [Quik Deen](/analysis/UI%20Inspirations/Quik%20Deen/055c10185886079.656b89c498ac1.jpg)
 
 ### Reference
 - [Hadith API](https://www.hadithapi.com)
 - [Aladhan API ](https://aladhan.com/)
 - [Qran API](https://alquran.cloud/api)
+
+
+### Conurbations Guidelines
+#### If you want to contribute to this project,  You are welcome to contribute to this project.  Please follow the guidelines below to contribute to this project.
 
 ##### Commit convention
 ```
