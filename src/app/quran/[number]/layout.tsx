@@ -26,7 +26,7 @@ export default function SingleQuranLayout({
   return (
     <div className="flex w-full ">
       <SingleSuraSidebar />
-      {children}
+      <div className="flex-1 ">{children}</div>
     </div>
   );
 }
